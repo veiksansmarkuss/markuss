@@ -1,0 +1,75 @@
+table, th, td
+* {border: 1px solid black;
+}
+td.zila{
+    border-color: blue;
+}
+<table>
+    
+    
+    </table>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-image: url('https://am4pap001files.storage.live.com/y4mVEMQ0ylHWFVBgDBp3xHLQNtBWCI2orMxJppVG9Nto8rtL2fAR1Zyx71kL3r7fdN6j2wA0n_lQujeo07qpfJQ4qL3FiK_PZze_m_cEDKMSMUvwFpnuNOr82RnMR9vqTL1_Y9RQJgeAbWKXYQTTWBLIIA6doCWe2uxxXksUjUczDqfhlvRc9au0fvXpqjbUI5AZQKngQxEBosRpd0XKVZsEA?encodeFailures=1&width=1158&height=832');
+  background-repeat: repeat;
+  background-size: contain;
+  padding: 20px;
+  
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
